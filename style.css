@@ -1,0 +1,56 @@
+body{
+  justify-content: center;
+  display: flex ;
+  flex-wrap: wrap;
+}
+
+nav{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height:2rem;
+  border: 1px solid;
+}
+a{
+  text-decoration: none;
+}
+.nav{
+  padding: 5px 10px;
+}
+
+main{
+  width: 100%;
+  height: 45rem;
+  border: 1px solid;
+}
+.projects{
+  justify-content: row;
+  display: flex;
+  width: 95%;
+  height: 53rem;
+  border: 1px solid;
+  flex-wrap: wrap ;
+}
+.projects-container{
+  display: flex;
+  width: 85%;
+  height: 15rem;
+  border: 1px solid;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.project-image{
+  margin-top: 1rem;
+  width : 47.5%;
+  height : 13rem;
+  border: 1px solid;
+}
+
+.project-property{
+  width : 47.5%;
+  height : 13rem;
+  border: 1px solid;
+  margin-top: 1rem;
+  margin-left: 5%;
+}
