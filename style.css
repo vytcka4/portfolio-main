@@ -17,7 +17,7 @@ body{
   padding: 0 auto;
   margin: 0 auto;
 }
-/* #background-video {
+#background-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -27,7 +27,7 @@ body{
   top: 0;
   bottom: 0;
   z-index: -1;
-} */
+}
 
 /* MAIN */
 
@@ -76,7 +76,6 @@ main{
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-image: linear-gradient(to right,rgb(18, 18, 19), rgb(245, 245, 242,0)), url(background-image.jpg);
   background-size:cover;
 }
 .main-text-container{
@@ -156,6 +155,13 @@ h1{
 
 /* PROJECTS */
 
+.background{
+  width:100%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-image: linear-gradient(to right top,rgb(182, 196, 236),rgb(76, 76, 226), rgb(65, 165, 231), rgb(66, 163, 228));
+}
 #projects{
   justify-content: center;
   display: flex;
@@ -164,6 +170,7 @@ h1{
   height: 62rem;
   border: 1px solid;
   flex-wrap: wrap ;
+  
 }
 .projects-container{
   display: flex;
@@ -201,9 +208,10 @@ h1{
 #about-me{
   width: 100%;
   height: 30rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
+  
 }
 
 .skills{
@@ -213,12 +221,12 @@ h1{
   text-align: center;
   flex-direction: column;
   height: 30rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 
 .main-skills{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   height : 15rem;
   display: flex;
@@ -230,12 +238,14 @@ h1{
 .main-skills-name{
   width: 100%;
   height: 5rem;
-  font-size: 35px;
-  font-family: 'Roboto';
-  border: 1px solid black;
+  font-size: 50px;
+  font-family: 'Zen Loop';
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: white;
+  text-shadow: 4px 4px black;
 }
 
 .main-icons-container{
@@ -292,8 +302,10 @@ h1{
   display:flex;
   justify-content: center;
   text-align: center;
-  font-family: "Roboto";
-  font-size: 25px;
+  font-family: "Zen Loop";
+  font-size: 35px;
+  color: white;
+  text-shadow: 4px 4px black
 }
 .course-link-name{
   font-family: "Roboto";
