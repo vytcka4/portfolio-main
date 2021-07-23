@@ -208,7 +208,7 @@ h1{
 .skills{
   width: 50%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   flex-direction: column;
   height: 30rem;
@@ -222,4 +222,62 @@ h1{
   height: 30rem;
   border: 1px solid black;
   flex-direction: column;
+}
+
+.main-skills{
+  border: 1px solid black;
+  width: 100%;
+  height : 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.main-skills-name{
+  width: 100%;
+  height: 5rem;
+  font-size: 35px;
+  font-family: 'Roboto';
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-icons-container{
+  width: 100%;
+  height: 10rem;
+  /* justify-content: center; */
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://www.clipartmax.com/png/middle/440-4409582_rather-th-html-css-js-icon-png.png); */
+}
+.icons{
+  width: 25%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+}
+.html{
+  background-image: url(html.png);
+  background-repeat: no-repeat;
+}
+.css{
+  background-image: url(css.png);
+}
+.js{
+  background-image: url(js.png);
+}
+.python{
+  background-image: url(python.png)
+}
+.node{
+  background-image: url(node.png)
+}
+.bootstrap{
+  background-image: url(bootstrap.png)
 }
