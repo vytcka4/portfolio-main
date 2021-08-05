@@ -8,11 +8,9 @@
   background: transparent;
 }
 
-
-
-body{
+body {
   justify-content: center;
-  display: flex ;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 auto;
   margin: 0 auto;
@@ -21,7 +19,7 @@ body{
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: fixed ;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -31,44 +29,40 @@ body{
 
 /* MAIN */
 
-
-
-nav{
-  justify-content:flex-start;
+nav {
+  justify-content: flex-start;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  height:4rem;
-  background-image: linear-gradient(to top,rgb(22, 22, 22), rgb(112, 57, 12));
-  position: fixed ;
-  margin:0 auto;
-  padding:0 auto;
+  height: 4rem;
+  background-image: linear-gradient(to top, rgb(22, 22, 22), rgb(112, 57, 12));
+  position: fixed;
+  margin: 0 auto;
+  padding: 0 auto;
 }
-a{
+a {
   text-decoration: none;
 }
 
-.nav{
+.nav {
   margin-top: 0.5rem;
   padding: 5px 30px 0px 30px;
   font-size: 25px;
-  color:white;
-  transition:  0.2s;
-  font-family: 'Roboto', sans-serif;
+  color: white;
+  transition: 0.2s;
+  font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px black;
-  
-
 }
- .nav:nth-child(1){
-   margin-right : 1rem;
- }
- .nav:hover{
-   color:rgb(180, 166, 166);
-   transform:translateY(-3px);
- }
+.nav:nth-child(1) {
+  margin-right: 1rem;
+}
+.nav:hover {
+  color: rgb(180, 166, 166);
+  transform: translateY(-3px);
+}
 
-main{
+main {
   width: 100%;
   height: 100vh;
   border: 1px solid;
@@ -76,145 +70,130 @@ main{
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-size:cover;
+  background-size: cover;
 }
-.main-text-container{
+.main-text-container {
   display: flex;
-
   width: 40rem;
-  height:7rem;
-  margin:0 auto;
+  height: 7rem;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
   flex-direction: column;
 }
-h1{
+h1 {
   margin: 0 auto;
   font-size: 80px;
-  color:white;
-  text-shadow: 4px 4px black ;
-  font-family: 'Zen Loop', cursive;
+  color: white;
+  text-shadow: 4px 4px black;
+  font-family: "Zen Loop", cursive;
 }
-.contact-button{
+.contact-button {
   /* border: 1px solid; */
   width: 20rem;
-  height:5rem;
-  margin:0 auto;
-  text-align:center;
-  justify-content:center;
+  height: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
 }
-.other-buttons{
+.other-buttons {
   display: flex;
   flex-wrap: wrap;
   width: 30rem;
-  height:5rem;
-  margin:0 auto;
+  height: 5rem;
+  margin: 0 auto;
   justify-content: center;
 }
-.button{
-  padding : 1.5rem 2.5rem;;
+.button {
+  padding: 1.5rem 2.5rem;
   /* border: 1px solid; */
   /* margin:0 auto; */
   box-shadow: 1px black;
 }
-.button-github{
-  padding:1.5rem 2rem;
- background-size:contain;
+.button-github {
+  padding: 1.5rem 2rem;
+  background-size: contain;
   background-image: url(http://iconsetc.com/icons-watermarks/flat-rounded-square-white-on-blue/social-media/social-media_github/social-media_github_flat-rounded-square-white-on-blue_512x512.png);
   background-repeat: no-repeat;
-  
 }
-.button-linkedin{
+.button-linkedin {
   transform: translateY(10px);
-  margin-right:2rem;
-  width:5rem;
+  margin-right: 2rem;
+  width: 5rem;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/1200px-LinkedIn_Logo.svg.png);
 }
 
-.contact-me{
-  padding:1rem 3rem 1rem 3rem;
-  border:2px solid;
-  color:white;
+.contact-me {
+  padding: 1rem 3rem 1rem 3rem;
+  border: 2px solid;
+  color: white;
   font-size: 20px;
   border-radius: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.contact-me:hover{
-  background-color:white;
-  color:black;
-  border:2px solid black;
-  cursor:pointer;
+.contact-me:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
 }
-
-
-
-
 
 /* PROJECTS */
 
-.background{
-  width:100%;
+.background {
+  width: 100%;
   background-position: fixed;
   background-repeat: no-repeat;
-  background-size:100% 100%;
-  background-image: linear-gradient(to right top,rgb(212, 218, 236),rgb(206, 206, 250), rgb(217, 235, 247), rgb(189, 224, 247));
+  background-size: 100% 100%;
+  background-image: linear-gradient(
+    to right top,
+    rgb(212, 218, 236),
+    rgb(206, 206, 250),
+    rgb(217, 235, 247),
+    rgb(189, 224, 247)
+  );
 }
-#projects{
+#projects {
   justify-content: center;
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
   height: 62rem;
   border: 1px solid;
-  flex-wrap: wrap ;
-  
+  flex-wrap: wrap;
 }
-.projects-container{
+.projects-container {
   display: flex;
-  width: 85%;
-  height: 18rem;
+  width: 45%;
+  height: 15rem;
   border: 1px solid;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  /* margin-top: 2rem;
+  margin-left: 2rem; */
 }
 
-.project-image{
+.project-image {
   margin-top: 1rem;
-  width : 47.5%;
-  height : 16rem;
+  width: 50%;
+  height: 16rem;
   border: 1px solid;
 }
-.project-name{
-  width: 100%;
-  height:3rem;
-  border: 1px solid
+
+.hidden {
+  display: none;
 }
 
-.project-property{
-  width : 47.5%;
-  height : 13rem;
-  border: 1px solid;
-  margin-top: 1rem;
-  margin-left: 5%;
-}
-
-.hidden{
-  display:none;
-}
-
-#about-me{
+#about-me {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top:5rem;
-  
+  padding-top: 5rem;
 }
 
-.skills{
+.skills {
   width: 50%;
   display: flex;
   text-align: center;
@@ -222,20 +201,19 @@ h1{
   height: 30rem;
 }
 
-
-.main-skills{
+.main-skills {
   width: 100%;
-  height : 15rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.main-skills-name{
+.main-skills-name {
   width: 100%;
   height: 5rem;
   font-size: 50px;
-  font-family: 'Zen Loop';
+  font-family: "Zen Loop";
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -243,40 +221,40 @@ h1{
   text-shadow: 1px 1px white;
 }
 
-.main-icons-container{
+.main-icons-container {
   width: 100%;
   height: 10rem;
   justify-content: center;
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
-.icons{
+.icons {
   width: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 8rem;
 }
-.html{
+.html {
   background-image: url(html.png);
   background-repeat: no-repeat;
 }
-.css{
+.css {
   background-image: url(css.png);
 }
-.js{
+.js {
   background-image: url(js.png);
 }
-.python{
-  background-image: url(python.png)
+.python {
+  background-image: url(python.png);
 }
-.node{
-  background-image: url(node.png)
+.node {
+  background-image: url(node.png);
 }
-.bootstrap{
-  background-image: url(bootstrap.png)
+.bootstrap {
+  background-image: url(bootstrap.png);
 }
 
-.courses{
+.courses {
   width: 50%;
   display: flex;
   text-align: center;
@@ -284,18 +262,18 @@ h1{
   flex-direction: column;
   margin-top: 1rem;
 }
-.courses-title{
+.courses-title {
   width: 100%;
-  height:5rem;
+  height: 5rem;
   font-family: "Zen Loop";
   font-size: 50px;
   color: rgb(39, 37, 37);
   text-shadow: 1px 1px white;
 }
-.courses-sertificates{
-  width:100%;
-  height:3rem;
-  display:flex;
+.courses-sertificates {
+  width: 100%;
+  height: 3rem;
+  display: flex;
   justify-content: center;
   text-align: center;
   font-family: "Zen Loop";
@@ -303,28 +281,35 @@ h1{
   color: rgb(39, 37, 37);
   text-shadow: 1px 1px white;
 }
-.course-link-name{
+.course-link-name {
   font-family: "Roboto";
   font-size: 15px;
   padding: 8px 12px;
-  background-image: linear-gradient(to right,rgb(41, 61, 238,1),rgb(187, 29, 174));
-  color:rgb(190, 185, 184);
+  background-image: linear-gradient(
+    to right,
+    rgb(41, 61, 238, 1),
+    rgb(187, 29, 174)
+  );
+  color: rgb(190, 185, 184);
   border-radius: 10px;
-  margin-top:10px;
-  margin-left:5px;
-  transition:  1s;
-  
+  margin-top: 10px;
+  margin-left: 5px;
+  transition: 1s;
 }
-.course-link-name:hover{
+.course-link-name:hover {
   animation-delay: 5s;
-  background-image: linear-gradient(to left,rgb(41, 61, 238),rgb(187, 29, 174));
+  background-image: linear-gradient(
+    to left,
+    rgb(41, 61, 238),
+    rgb(187, 29, 174)
+  );
   color: whitesmoke;
 }
-.course-link-name:active{
-  background-image:radial-gradient(rgb(187, 29, 174))
+.course-link-name:active {
+  background-image: radial-gradient(rgb(187, 29, 174));
 }
 
-#contact-container{
-  width:100%;
+#contact-container {
+  width: 100%;
   height: 100vh;
 }
