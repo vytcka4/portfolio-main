@@ -150,10 +150,10 @@ h1 {
   background-size: 100% 100%;
   background-image: linear-gradient(
     to right top,
-    rgb(212, 218, 236),
-    rgb(206, 206, 250),
-    rgb(217, 235, 247),
-    rgb(189, 224, 247)
+    rgb(249, 250, 253),
+    rgb(244, 244, 253),
+    rgb(234, 243, 248),
+    rgb(228, 239, 247)
   );
 }
 #projects {
@@ -280,7 +280,7 @@ h1 {
   font-family: "Zen Loop";
   font-size: 30px;
   color: rgb(39, 37, 37);
-  text-shadow: 1px 1px white;
+  /* text-shadow: 1px 1px white; */
 }
 .course-link-name {
   font-family: "Roboto";
@@ -288,10 +288,10 @@ h1 {
   padding: 8px 12px;
   background-image: linear-gradient(
     to right,
-    rgb(41, 61, 238, 1),
-    rgb(187, 29, 174)
+    rgb(99, 114, 241),
+    rgb(134, 192, 247)
   );
-  color: rgb(190, 185, 184);
+  color: rgb(3, 3, 3);
   border-radius: 10px;
   margin-top: 10px;
   margin-left: 5px;
@@ -302,7 +302,7 @@ h1 {
   background-image: linear-gradient(
     to left,
     rgb(41, 61, 238),
-    rgb(187, 29, 174)
+    rgb(238, 213, 236)
   );
   color: whitesmoke;
 }
