@@ -314,3 +314,60 @@ h1 {
   width: 100%;
   height: 100vh;
 }
+
+/* responsive mobiles 320-480px */
+
+@media (min-width: 480px) {
+  .projects-container {
+    width: 95%;
+    height: 10rem;
+  }
+  .project-image {
+    width: 45%;
+    height: 9rem;
+  }
+
+  #projects {
+    flex-wrap: no-wrap;
+    padding-bottom: 10rem;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    width: 90%;
+    height: 15rem;
+  }
+  .project-image {
+    width: 45%;
+    height: 14rem;
+  }
+  #projects {
+    flex-wrap: no-wrap;
+    padding-bottom: 30rem;
+  }
+  h1 {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-container {
+    width: 45%;
+    height: 15rem;
+  }
+  .project-image {
+    width: 45%;
+    height: 14rem;
+  }
+  #projects {
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
+  h1 {
+    font-size: 80px;
+  }
+}
