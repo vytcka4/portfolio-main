@@ -8,3 +8,18 @@ const otherBtn = document.querySelector(".other-buttons");
 //   contactBtnContainer.classList.add("hidden");
 //   otherBtn.classList.add("hidden");
 // })
+
+//NAVIGATION////
+//smooth scrolling
+
+const nav = document.querySelector("nav");
+
+nav.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("nav")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+///////////////////////////////////////////////////
