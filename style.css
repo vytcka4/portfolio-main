@@ -317,7 +317,14 @@ h1 {
 
 /* responsive mobiles 320-480px */
 
-@media (min-width: 480px) {
+@media (min-width: 360px) {
+  .nav {
+    margin-top: 0.5rem;
+    padding: 2px 10px 0px 10px;
+  }
+  body {
+    width: 100%;
+  }
   .projects-container {
     width: 95%;
     height: 12rem;
@@ -329,7 +336,7 @@ h1 {
   }
 
   #projects {
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     padding-bottom: 16rem;
   }
   h1 {
