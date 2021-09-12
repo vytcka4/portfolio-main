@@ -318,6 +318,13 @@ h1 {
 /* responsive mobiles 320-480px */
 
 @media (min-width: 360px) {
+  .main-text-container {
+    width: 20rem;
+  }
+  .other-buttons {
+    width: 20rem;
+  }
+
   .nav {
     margin-top: 0.5rem;
     padding: 2px 10px 0px 10px;
@@ -336,6 +343,7 @@ h1 {
   }
 
   #projects {
+    width: 100%;
     flex-wrap: wrap;
     padding-bottom: 16rem;
   }
@@ -359,6 +367,12 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .main-text-container {
+    width: 30rem;
+  }
+  .other-buttons {
+    width: 30rem;
+  }
   .projects-container {
     width: 90%;
     height: 15rem;
