@@ -15,6 +15,7 @@ body {
   padding: 0 auto;
   margin: 0 auto;
 }
+
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -162,6 +163,14 @@ h1 {
 
 /* PROJECTS */
 
+.tittle {
+  font-family: "Zen Loop";
+  font-size: 80px;
+  text-align: center;
+  /* margin-top: 3rem; */
+  padding-top: 7rem;
+}
+
 .background {
   width: 100%;
   background-position: fixed;
@@ -175,8 +184,9 @@ h1 {
     rgb(228, 239, 247)
   );
 }
+
 #projects {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   justify-content: center;
   display: flex;
   flex-direction: row-reverse;
