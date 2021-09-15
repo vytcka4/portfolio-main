@@ -6,6 +6,9 @@ const nav = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav");
 
 const main = document.querySelector("main");
+const bankistWeb = document.querySelector(".bankist-web");
+const projectImage = document.querySelector(".project-image");
+const projectClicker = document.querySelector(".project-clicker");
 
 //NAVIGATION////
 //smooth scrolling
@@ -43,3 +46,18 @@ const mainObs = new IntersectionObserver(stickyNav, {
 mainObs.observe(main);
 
 ///////////////////////////////////////////////
+
+bankistWeb.addEventListener("click", function () {
+  window.open("https://vytcka4.github.io/bankist-website/", "_blank");
+});
+
+projectImage.addEventListener("mouseover", function (e) {
+  projectImage.style.opacity = 0.45;
+  // projectClicker.classList.remove("hidden");
+  // projectClicker.style.opacity = 1;
+});
+projectImage.addEventListener("mouseout", function (e) {
+  projectImage.style.opacity = 1;
+  // projectClicker.classList.add("hidden");
+  // projectClicker.style.opacity = 0;
+});

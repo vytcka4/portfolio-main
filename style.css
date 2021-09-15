@@ -206,10 +206,18 @@ h1 {
 }
 
 .project-image {
-  margin-top: 1rem;
   width: 50%;
-  height: 19rem;
-  border: 1px solid;
+  height: 20rem;
+  background-size: cover;
+  justify-content: center;
+}
+
+.project-info {
+  width: 50%;
+  height: 20rem;
+}
+.bankist-web {
+  background-image: url(bankist-web.png);
 }
 
 .hidden {
@@ -369,8 +377,17 @@ h1 {
   }
   .project-image {
     width: 45%;
-    height: 11rem;
+    height: 12rem;
+    justify-content: center;
   }
+  .project-info {
+    width: 55%;
+    height: 12rem;
+    text-align: center;
+  }
+  /* h2 {
+    font-size: 20px;
+  } */
 
   #projects {
     width: 100%;
@@ -407,6 +424,10 @@ h1 {
   .other-buttons {
     width: 30rem;
   }
+  .project-info {
+    width: 50%;
+    height: 20rem;
+  }
   .projects-container {
     width: 90%;
     height: 15rem;
@@ -432,7 +453,7 @@ h1 {
   }
   .project-image {
     width: 45%;
-    height: 14rem;
+    height: 15rem;
   }
   #projects {
     flex-wrap: wrap;
