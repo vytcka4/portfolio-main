@@ -108,14 +108,7 @@ h1 {
   text-shadow: 4px 4px black;
   font-family: "Zen Loop", cursive;
 }
-.contact-button {
-  /* border: 1px solid; */
-  width: 20rem;
-  height: 5rem;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-}
+
 .other-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +161,7 @@ h1 {
   font-size: 80px;
   text-align: center;
   /* margin-top: 3rem; */
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .background {
@@ -200,9 +193,16 @@ h1 {
   display: flex;
   width: 45%;
   height: 20rem;
-  border: 1px solid;
+  border: 1.5px solid rgb(199, 197, 197);
   margin-top: 3rem;
   margin-left: 3rem;
+  box-shadow: 20px 20px 50px 15px grey;
+  transition: 1.2s;
+  border-radius: 2.5%;
+}
+
+.projects-container:hover {
+  transform: translateY(-10px);
 }
 
 .project-image {
@@ -210,11 +210,14 @@ h1 {
   height: 20rem;
   background-size: cover;
   justify-content: center;
+  border-radius: 2.5%;
 }
 
 .project-info {
   width: 50%;
   height: 20rem;
+  border-radius: 2.5%;
+  font-family: "Roboto", sans-serif;
 }
 .bankist-web {
   background-image: url(bankist-web.png);
