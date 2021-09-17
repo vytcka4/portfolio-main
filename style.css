@@ -211,6 +211,10 @@ h1 {
   background-size: cover;
   justify-content: center;
   border-radius: 2.5%;
+  opacity: 1;
+}
+.project-image:hover {
+  opacity: 0.45;
 }
 
 .project-info {
@@ -218,6 +222,7 @@ h1 {
   height: 20rem;
   border-radius: 2.5%;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .bankist-web {
   background-image: url(bankist-web.png);
@@ -241,6 +246,7 @@ h1 {
   text-align: center;
   flex-direction: column;
   height: 30rem;
+  box-shadow: 20px 20px 20px 15px grey;
 }
 
 .main-skills {
@@ -303,6 +309,7 @@ h1 {
   height: 30rem;
   flex-direction: column;
   margin-top: 1rem;
+  box-shadow: 20px 20px 50px 15px grey;
 }
 .courses-title {
   width: 100%;
