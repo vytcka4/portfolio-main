@@ -10,6 +10,8 @@ const bankistWeb = document.querySelector(".bankist-web");
 const projectImage = document.querySelector(".project-image");
 const projectClicker = document.querySelector(".project-clicker");
 
+const sections = document.querySelectorAll(".title");
+
 //NAVIGATION////
 //smooth scrolling
 
@@ -58,4 +60,20 @@ projectImage.addEventListener("mouseover", function (e) {
 projectImage.addEventListener("mouseout", function (e) {
   // projectClicker.classList.add("hidden");
   // projectClicker.style.opacity = 0;
+});
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2,
+});
+
+sections.forEach(function (section) {
+  sectionObserver.observe(sections);
+  section.classList.add("hidden");
 });
