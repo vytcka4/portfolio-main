@@ -28,11 +28,8 @@ nav.addEventListener("click", function (e) {
 ///sticky nav/////
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
   if (!entry.isIntersecting) {
-    console.log(nav);
     nav.classList.add("nav-sticky");
-    console.log(navLinks);
     navLinks.forEach((nav) => nav.classList.add("nav-sticky-font"));
   } else {
     nav.classList.remove("nav-sticky");
@@ -41,8 +38,8 @@ const stickyNav = function (entries) {
 };
 const mainObs = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0.1,
-  // margin: "-10px",
+  threshold: 0.05,
+  // margin: "10px",
 });
 
 mainObs.observe(main);

@@ -224,6 +224,10 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
+.project-info-span {
+  margin-bottom: 2rem;
+}
 .bankist-web {
   background-image: url(bankist-web.png);
 }
