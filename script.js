@@ -51,12 +51,12 @@ bankistWeb.addEventListener("click", function () {
 });
 
 projectImage.addEventListener("mouseover", function (e) {
-  // projectClicker.classList.remove("hidden");
-  // projectClicker.style.opacity = 2;
+  projectClicker.classList.remove("hidden");
+  projectClicker.style.opacity = 1;
 });
 projectImage.addEventListener("mouseout", function (e) {
-  // projectClicker.classList.add("hidden");
-  // projectClicker.style.opacity = 0;
+  projectClicker.classList.add("hidden");
+  projectClicker.style.opacity = 0;
 });
 const revealSection = function (entries, observer) {
   const [entry] = entries;

@@ -196,7 +196,7 @@ h1 {
   border: 1.5px solid rgb(199, 197, 197);
   margin-top: 3rem;
   margin-left: 3rem;
-  box-shadow: 20px 20px 50px 15px grey;
+  box-shadow: 20px 20px 50px 15px rgb(96, 107, 128);
   transition: 1.2s;
   border-radius: 2.5%;
 }
@@ -212,6 +212,7 @@ h1 {
   justify-content: center;
   border-radius: 2.5%;
   opacity: 1;
+  justify-content: center;
 }
 .project-image:hover {
   opacity: 0.45;
@@ -224,9 +225,36 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+h5 {
+  margin-bottom: 2rem;
+  font-size: 50px;
+  font-family: "Zen Loop";
+}
+
+.project-info-link {
+  padding: 12px 30px;
+  /* border: 1px solid black; */
+  border-radius: 10%;
+  color: white;
+  background: linear-gradient(
+    to top left,
+    rgb(138, 136, 136),
+    rgb(153, 147, 198)
+  );
+  transition: 0.8s;
+}
+
+.project-info-link:hover {
+  background: linear-gradient(
+    to top left,
+    rgb(139, 150, 248),
+    rgb(213, 208, 250)
+  );
+}
 
 .project-info-span {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
+  font-size: 17px;
 }
 .bankist-web {
   background-image: url(bankist-web.png);
@@ -250,7 +278,7 @@ h1 {
   text-align: center;
   flex-direction: column;
   height: 30rem;
-  box-shadow: 20px 20px 20px 15px grey;
+  /* box-shadow: 20px 20px 20px 15px grey; */
 }
 
 .main-skills {
@@ -313,7 +341,7 @@ h1 {
   height: 30rem;
   flex-direction: column;
   margin-top: 1rem;
-  box-shadow: 20px 20px 50px 15px grey;
+  /* box-shadow: 20px 20px 50px 15px grey; */
 }
 .courses-title {
   width: 100%;
