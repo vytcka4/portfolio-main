@@ -7,7 +7,7 @@ const navLinks = document.querySelectorAll(".nav");
 
 const main = document.querySelector("main");
 const bankistWeb = document.querySelector(".bankist-web");
-const projectImage = document.querySelector(".project-image");
+const projectImage = document.querySelectorAll(".project-image");
 const projectClicker = document.querySelector(".project-clicker");
 
 const sections = document.querySelectorAll(".title");
@@ -50,14 +50,19 @@ bankistWeb.addEventListener("click", function () {
   window.open("https://vytcka4.github.io/bankist-website/", "_blank");
 });
 
-projectImage.addEventListener("mouseover", function (e) {
-  projectClicker.classList.remove("hidden");
-  projectClicker.style.opacity = 1;
-});
-projectImage.addEventListener("mouseout", function (e) {
-  projectClicker.classList.add("hidden");
-  projectClicker.style.opacity = 0;
-});
+console.log(projectClicker);
+[...projectImage].forEach(
+  addEventListener("mouseover", function (e) {
+    projectClicker.classList.remove("hidden");
+    projectClicker.style.opacity = 1;
+  })
+);
+[...projectImage].forEach(
+  addEventListener("mouseout", function (e) {
+    projectClicker.classList.add("hidden");
+    projectClicker.style.opacity = 0;
+  })
+);
 const revealSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
