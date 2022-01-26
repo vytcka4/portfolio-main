@@ -50,25 +50,40 @@ bankistWeb.addEventListener("click", function () {
   window.open("https://vytcka4.github.io/bankist-website/", "_blank");
 });
 
-console.log(projectClicker);
-[...projectImage].forEach(
-  addEventListener("mouseover", function (e) {
-    projectClicker.classList.remove("hidden");
-    projectClicker.style.opacity = 1;
-  })
-);
-[...projectImage].forEach(
-  addEventListener("mouseout", function (e) {
-    projectClicker.classList.add("hidden");
-    projectClicker.style.opacity = 0;
-  })
-);
-const revealSection = function (entries, observer) {
+// console.log(projectClicker);
+
+// console.log(projectImage.target);
+
+// projectImage.target.addEventListener("mouseover", function (e) {
+//   if (projectClicker.classList.contains("hidden"))
+//     projectClicker.classList.remove("hidden");
+//   projectClicker.style.opacity = 1;
+// });
+
+console.log(projectImage);
+
+// projectImage.forEach(function (item) {
+//   console.log(item.target);
+//   item.addEventListener("mouseover", function (e) {
+//     if (item.target.firstChild.classList.contains("hidden"))
+//       item.target.firstChild.classList.remove("hidden");
+//     // projectClicker.style.opacity = 1;
+//   });
+// });
+// projectImage.forEach(function (item) {
+//   item.addEventListener("mouseout", function (e) {
+//     if (!item.target.firstChild.classList.contains("hidden"))
+//       item.target.firstChild.classList.add("hidden");
+//     // projectClicker.style.opacity = 0;
+//   });
+// });
+
+function revealSection(entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("hidden");
   observer.unobserve(entry.target);
-};
+}
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
